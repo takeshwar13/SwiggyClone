@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Comaptible" content="IE-edge" />
+    <meta name="Viewport" content="width= device-width, initial-scale=1.0" />
+    <title>Namaste React</title>
+</head>
+
+<body>
+    <div id="root">
+        Hi
+        <!-- <script>
+            const heading = document.createElement("h1");
+            heading.innerHTML = "Hello from JavaScript";
+
+            const root = document.getElementById("root");
+            root.appendChild(heading);
+        </script> -->
+
+        <!-- 
+            If you want to create a React app using CDN links instead of a full build setup (like Create React App or Vite), 
+            you can directly include React and ReactDOM via CDN.
+            This method is simpler but doesn't provide features like JSX compilation, 
+            automatic build processes, or module bundling (you will need Babel for JSX in the browser).
+            *Create an index.html file and include the React and ReactDOM CDN links.
+
+         -->
+        <!-- * React CDN - Link to core react library. -->
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+
+        <!-- *ReactDOM CDN - This is the react library usful for DOM(Document Object Model) operations, or to Modify the DOM. -->
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- *Babel CDN: This enables you to use JSX directly in the browser, which is necessary because browsers don't natively support JSX. -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+        <script src="App.js"> </script>
+        <!-- The Order of file matters.  -->
+    </div>
+</body>
+
+</html>
